@@ -1,0 +1,23 @@
+helmRepos:
+  prometheus-community: "https://prometheus-community.github.io/helm-charts"
+  grafana: https://grafana.github.io/helm-charts
+
+
+namespaces:
+  farm-monitoring:
+
+apps:
+  prometheus-server:
+    namespace: farm-monitoring
+    chart: prometheus-community/prometheus
+    enabled: true
+    version: 15.18.0
+    name: prometheus
+    valuesFile: ./values/prom-values.yaml
+  grafana:
+    namespace: farm-monitoring
+    chart: grafana/grafana
+    enabled: true
+    version: 6.43.5
+    name: grafana
+    valuesFile: ./values/grafana-values.yaml
