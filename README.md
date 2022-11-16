@@ -7,10 +7,10 @@ Using rasperrypi + Python + GCP we can have our own automated self farm.
 
 # The flow #
 
-1- Sensors are scrapped by prometheus running on my raspberrypi 
-2- Prometheus server hosted on my GKE scrapes the prometheus server of the raspberrypi including its critical metrics and sensors 
-3- Grafana Alerting are set to certain thresholds to ensure certain readings do not go beyond a threshold for example water/moisture if they do notification policy will trigger and call webhook api running on the raspberrypi
-4- Webhook api running on the raspberrypi will trigger an action based on the call for example turn water pump on 
+1. Sensors are scrapped by prometheus running on my raspberrypi 
+2. Prometheus server hosted on my GKE scrapes the prometheus server of the raspberrypi including its critical metrics and sensors 
+3. Grafana Alerting are set to certain thresholds to ensure certain readings do not go beyond a threshold for example water/moisture if they do notification policy will trigger and call webhook api running on the raspberrypi
+4. Webhook api running on the raspberrypi will trigger an action based on the call for example turn water pump on 
 
 ![Alt text](./docs/Flow_Diagram.png?raw=true "Flow")
 ![Alt text](./docs/Dashbhoard_1.png?raw=true "Title")
