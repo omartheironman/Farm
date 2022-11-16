@@ -22,16 +22,18 @@ Using rasperrypi + Python + GCP we can have our own automated self farm.
 
 Raspberrypi was used as main controlling source there are two main components running on the pi
 
- ## Circuit Interaction ##
+ ## 1- Circuit Interaction ##
  In the circuit interaction there is two main objectives 
  
- ### ReadSensor ###
+ ### 1.1 - ReadSensor ###
  With sensor readings from moisture and temprature we constantly read data and have it scraped by prometheus with a job lavel
  Current sensors installed are capacitive sensors, and temperature sensors 
- ### TakeAction ###
+ ### 1.2 - TakeAction ###
  Using FlaskAPI a webhook endpoint is waiting for commands to be send by Grafana Alerting notification Policy
  the api is using auth basic to authenticate incoming calls from Grafana, additionally firewall rules have been setup to ensure only calls from grafana instance will be accepted 
  
+ ## 2- Prometheus ##
+ Prometheus was used to scrape data exported by custom exporter, which collects all sensor readings. This prometheus endpoint is then scraped by the GCP prometheus   server hosted on GKE
  
 # Infrastructure running on GCP #
 
