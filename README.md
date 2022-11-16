@@ -1,6 +1,6 @@
 # Farm
 
-Taking good care of health and excercise is good, but we could take it to the next level and possibly explore solutions of having our own self maintained farm. 
+Taking good care of health and excercise is good, but we could take it to the next level by controlling what we consume with less GMO and possibly explore solutions of having our own self maintained farm. 
 
 Using rasperrypi + Python + GCP we can have our own automated self farm. 
 
