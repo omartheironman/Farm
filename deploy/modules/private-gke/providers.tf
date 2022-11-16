@@ -17,7 +17,7 @@ data "google_client_config" "default" {}
 
 provider "google" {
   # Configuration options
-  credentials = "${file("/Users/omar/Downloads/key.json")}"
+  credentials = "${file("/key.json")}". #Injected into env
   project = "mimetic-plate-368221"
   region  = "us-central1"
 }
