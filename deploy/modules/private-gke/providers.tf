@@ -19,7 +19,7 @@ provider "google" {
   # Configuration options
   credentials = "${file("/key.json")}". #Injected into env
   project = var.project
-  region  = var.location
+  region  = var.region
 }
 
 provider "kubernetes" {
