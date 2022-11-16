@@ -18,8 +18,8 @@ data "google_client_config" "default" {}
 provider "google" {
   # Configuration options
   credentials = "${file("/key.json")}". #Injected into env
-  project = "mimetic-plate-368221"
-  region  = "us-central1"
+  project = var.project
+  region  = var.location
 }
 
 provider "kubernetes" {
