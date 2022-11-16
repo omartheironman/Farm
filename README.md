@@ -16,7 +16,7 @@ Using rasperrypi + Python + GCP we can have our own automated self farm.
 ![Alt text](./docs/Dashbhoard_1.png?raw=true "Title")
 
 
-# Infrastructure at my home =) #
+# Infrastructure at my home#
 
 
 
@@ -39,17 +39,17 @@ Raspberrypi was used as main controlling source there are two main components ru
 
 
  ## Terragrunt ##
- Terragrunt was chosen for easier automation of my infrastructure as it allows me to store my remote state on my bugget 
+ Terragrunt was chosen for easier automation of my infrastructure and it also allows me to store my remote state on my bucket
  
  ## Terraform ##
- Using terraform providers to orchestrate my infrastructure deployment from Nodepool, Service, Ingress and External IP
+ Using terraform providers to orchestrate my infrastructure deployment from Cluster, Nodepool, Service, Ingress to External IP
 
  ## Helmsman ##
  Helmsman was used to deploy prometheus and grafana to my infrastructure after terragrunt ran 
 
 
  ### To Do ###
- I am currently working on storing credentials into vault for Grafana as well as switching my Grafana into a Stateful or keep my Grafana dashboard for easier automation 
+ I am currently working on storing credentials into vault for Grafana as well as switching my Grafana into a Statefulset or keep my Grafana dashboard as code (Json) for easier automation 
 
 
 
