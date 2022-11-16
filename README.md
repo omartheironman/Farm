@@ -2,7 +2,8 @@
 
 Taking good care of health and excercise is good, but we could take it to the next level by controlling what we consume with less GMO and possibly explore solutions of having our own self maintained farm. 
 
-Using rasperrypi + Python + GCP we can have our own automated self farm. 
+In this project, the aim was to explore and create a prototype of having an indoor ecosystem that is self maintained to produce harvest.
+The farm uses rasperrypi + Python + GCP 
 
 
 # The flow #
