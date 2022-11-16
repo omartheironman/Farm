@@ -1488,7 +1488,6 @@ serverFiles:
         static_configs:
           - targets:
             - 99.211.46.205:9090
-            - 99.211.46.205:9100
       - job_name: raspberrypisensors
         static_configs:
           - targets:
@@ -1668,7 +1667,8 @@ serverFiles:
             regex: __meta_kubernetes_service_label_(.+)
           - source_labels: [__meta_kubernetes_namespace]
             action: replace
-            target_label: namespace
+            
+            _label: namespace
           - source_labels: [__meta_kubernetes_service_name]
             action: replace
             target_label: service
