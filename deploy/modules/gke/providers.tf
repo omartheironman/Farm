@@ -17,7 +17,7 @@ data "google_client_config" "default" {}
 
 provider "google" {
   # Configuration options
-  credentials = "${file("/key.json")}". #Injected into env
+  credentials = "${file("/key.json")}" #Injected into env
   project = var.project
   region  = var.region
 }
